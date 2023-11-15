@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.top-bar {
+  background-color: #ff4b4b; /* Same color as your Log In button */
+  height: 70px; /* Adjust the height as needed */
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10; /* Ensures the bar stays on top */
+  display: flex;
+  justify-content: left; /* Center the text horizontally */
+  align-items: center; /* Center the text vertically */
+}
+
+.top-bar-text {
+  color: white; /* Set the text color */
+  font-size: 30px; /* Set the text size */
+  font-weight: bold;
+  padding-left: 25px;
+}
