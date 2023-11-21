@@ -17,6 +17,14 @@ body {
     font-weight: bold;
 }
 
+.popular-decks {
+    padding-left: 25px;
+    margin-top: 90px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
 .top-bar {
     background-color: #ff4b4b; /* Same color as your Log In button */
     height: 70px; /* Adjust the height as needed */
