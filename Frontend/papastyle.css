@@ -14,7 +14,9 @@ code {
 }
 
 h1{
-  color: #fff
+  color: #fff;
+  font-size: 30px; /* Set the text size */
+  font-weight: bold;
 }
 
 h2 {
@@ -39,9 +41,6 @@ h2 {
 
 .top-bar-text {
   text-align: left;
-  color: white; /* Set the text color */
-  font-size: 30px; /* Set the text size */
-  font-weight: bold;
 }
 
 .page-container {
@@ -56,4 +55,69 @@ h2 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+}
+
+
+/* nav bar stuff */
+#menubar
+{
+  background-color: #ff4b4b; /* Same color as your Log In button */
+  height: 70px; /* Adjust the height as needed */
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10; /* Ensures the bar stays on top */
+  display: flex;
+  justify-content: left; /* Center the text horizontally */
+  align-items: center; /* Center the text vertically */
+  padding-left: 25px;
+}
+
+#menubar ul
+{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#menubar li
+{
+    width: 125px;
+    text-align: center;
+    
+
+    position: relative;
+}
+
+#menubar > ul
+{
+    display: flex;
+    align-items: flex-start;
+}
+
+#menubar li:hover
+{
+    color: #eff1f1;
+    background-color: #941918;
+}
+
+#menubar a
+{
+    color: #384644;
+    text-decoration: none;
+
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+
+#menubar li:hover > a
+{
+    color: #eff1f1;
+
 }
