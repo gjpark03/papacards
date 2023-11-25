@@ -2,10 +2,9 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="papastyle.css">
-  <title> papacards - login </title>
+  <title> papacards </title>
     
   <style>
-/* page specific stuff (moved over here by audrey) */
     .create-account {
       text-align: center;
       display: block;
@@ -35,7 +34,6 @@
       display: block;
       color: #666;
       margin-bottom: 5px;
-      text-align: left;
     }
 
     .form-group input {
@@ -44,23 +42,16 @@
       border: 1px solid #ddd;
       border-radius: 5px;
     }
-
-    .login-container{
-      
-    position: absolute;
-    margin-top: 30%;
-    margin-left: 35%
-    }
-
   </style>
 </head>
 <body>
   <div class="top-bar">
     <nav>
       <div class="company-name">
-        <h1><a href="index.html">papacards</a></h1>
+        <h1><a href="guesthomepage.html">papacards</a></h1>
       </div>
     </nav>
+  </div>
 <div class="login-container">
   <h2>Log in to existing account</h2>
   <div class="form-group">
@@ -76,6 +67,15 @@
   </div>
   <a href="signup.html" class="create-account">Or, Create New Account</a>
 </div>
+
+<script>
+document.getElementById('loginButton').addEventListener('click', function() {
+  var username = document.getElementById('username').value;
+  var password = document.getElementById('password').value;
+  // Add logic to validate credentials here
+  alert('Login attempt with Username: ' + username + ' and Password: ' + password);
+});
+</script>
 
 </body>
 </html>
