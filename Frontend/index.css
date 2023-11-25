@@ -14,7 +14,7 @@ body {
     padding-left: 25px;
     margin-top: 90px;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: bold; 
 }
 
 .popular-decks {
@@ -35,7 +35,6 @@ body {
     z-index: 10; /* Ensures the bar stays on top */
     display: flex;
     align-items: center; /* Center the text vertically */
-    padding-left: 25px;
   }
 
   .top-bar-text {
@@ -45,6 +44,7 @@ body {
   }
 
   h1{
+    padding-left: 25px;
     color: #fff;
     font-size: 30px; /* Set the text size */
     font-weight: bold;
@@ -79,3 +79,4 @@ nav a {
 nav a:hover {
     color: rgb(87, 87, 87);
 }
+  /* nav bar stuff end */
