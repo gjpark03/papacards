@@ -21,13 +21,13 @@ body {
     z-index: 10; /* Ensures the bar stays on top */
     display: flex;
     align-items: center; /* Center the text vertically */
-    padding-left: 25px;
   }
 
   h1{
     color: #fff;
     font-size: 30px; /* Set the text size */
     font-weight: bold;
+    padding-left: 25px;
 }
   /* top bar stuff end*/
 
