@@ -1,35 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="index.css">
-  <title>Sign Up</title>
+  <link rel="stylesheet" href="papastyle.css">
+  <title> papacards - signup </title>
+    
+  <style>
+    .create-account {
+      text-align: center;
+      display: block;
+      margin-top: 20px;
+      color: #333;
+    }
+
+    .form-group button {
+      width: 100%;
+      padding: 10px;
+      background-color: #ff4b4b;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .form-group button:hover {
+      background-color: #ff6565;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      color: #666;
+      margin-bottom: 5px;
+      text-align: left;
+    }
+
+    .form-group input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+  </style>
 </head>
 <body>
   <div class="top-bar">
-    <p class="top-bar-text">Flashcard App</p>
+    <nav>
+      <div class="company-name">
+        <h1><a href="guesthomepage.html">papacards</a></h1>
+      </div>
+      
+    </nav>
   </div>
-  <div class="login-container">
-    <h2>Sign Up</h2>
-    <div class="form-group">
-      <label for="new-username">Username</label>
-      <input type="text" id="new-username" placeholder="Create a username">
-    </div>
-    <div class="form-group">
-      <label for="new-password">Password</label>
-      <input type="password" id="new-password" placeholder="Create a password">
-    </div>
-    <div class="form-group">
-      <label for="confirm-password">Confirm Password</label>
-      <input type="password" id="confirm-password" placeholder="Confirm your password">
-    </div>
-    <div class="form-group">
-      <button id="signupButton">Sign Up</button>
-    </div>
-    <a href="index.html" class="create-account">Already have an account? Log In</a>
+<div class="page-container">
+  <h2>Create a New Account</h2>
+  <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" id="username" name="username" placeholder="Enter your username">
   </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" id="password" name="password" placeholder="Enter your password">
+  </div>
+  <div class="form-group">
+    <button id="signupButton"> Sign Up</button>
+  </div>
+  <a href="login.html" class="create-account">Already have an account? Log in</a>
+</div>
 
-  <script>
-    // Here you can add JavaScript to handle the sign-up logic
-  </script>
 </body>
 </html>

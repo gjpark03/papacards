@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  width: 100%;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1{
+  color: #fff;
+  font-size: 30px; /* Set the text size */
+  font-weight: bold;
+  padding-left: 25px;
+}
+
+h2 {
+  color: #333;
+  text-align: center;
+}
+
+.top-bar {
+  background-color: #ff4b4b; /* Same color as your Log In button */
+  height: 70px; /* Adjust the height as needed */
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10; /* Ensures the bar stays on top */
+  display: flex;
+  justify-content: left; /* Center the text horizontally */
+  align-items: center; /* Center the text vertically */
+  box-sizing: border-box;
+}
+
+.top-bar-text {
+  text-align: left;
+}
+
+.login-container {
+  background-color: #fff;
+  padding: 20px;
+  padding-right: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+
+/* nav bar stuff */
+nav {
+  display: flex;
+  align-items: flex-start;
+  overflow: hidden;
+  width: 100%;
+  padding-right: 25px;
+  height: 70px;
+  align-items: center;
+
+}
+
+.menuitems{
+  padding-left: 20px;
+}
+
+.menuitems a{
+  padding: 14px 16px;
+}
+
+nav a {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: rgb(87, 87, 87);
+}
+/* nav bar stuff end */
