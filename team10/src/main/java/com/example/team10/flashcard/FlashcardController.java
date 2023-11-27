@@ -26,4 +26,16 @@ public class FlashcardController {
     public void registerNewFlashcard(@RequestBody Flashcard flashcard){
         flashcardService.addNewFlashcard(flashcard);
     }
+
+    @DeleteMapping(path = "{flashcardId}")
+    public void deleteFlashcard(@PathVariable("flashcardId") Long flashcardId){
+        flashcardService.deleteFlashcard(flashcardId);
+    }
+
+    @PutMapping(path = "{flashcardId}")
+    public void updateFlashcard(@PathVariable("flashcardId") Long flashcardId,
+                                @RequestParam(required = false) String frontText,
+                                @RequestParam(required = false) String backText){
+        flashcardService.updateFlashcard(flashcardId, frontText, backText);
+    }
 }
