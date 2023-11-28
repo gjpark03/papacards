@@ -24,7 +24,21 @@
   </div>
 
   <!--Navigation bar-->
-  
+
+<!-- search / create deck -->
+  <div id="deck-operation">
+    <button type="button" id="createdeckbutton"><scan style="font-family: 'FontAwesome';">&#xF044;</scan> Create a Deck</button>
+
+    <div id="search">
+      <form id="searchForm">
+          <div id="top-left">
+              <input type="text" id="searchdeck" name="searchdeck" required placeholder="Search Deck">
+              <input type="submit" id="searchbutton" value="Search" onclick="search()">
+          </div>
+      </form>
+    </div>
+  </div>
+  <!-- search / create deck END -->
 
   <div class="recently-studied">Recently Studied:</div>
 
