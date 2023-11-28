@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Font Awesome";
+  src: url(font/fontawesome-webfont.ttf);
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
@@ -12,7 +17,7 @@ body {
 
 .recently-studied {
     padding-left: 25px;
-    margin-top: 90px;
+    margin-top: 20px;
     font-size: 30px;
     font-weight: bold; 
 }
@@ -80,3 +85,40 @@ nav a:hover {
     color: rgb(87, 87, 87);
 }
   /* nav bar stuff end */
+
+
+  /* create deck + search bar */
+  #deck-operation{
+    margin-top: 90px;
+    margin-left: 25px;
+  }
+
+  #search{
+    margin-top: 20px;
+  }
+
+  #createdeckbutton{
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    height: 45px;
+    background-color:  #ff4b4b;
+    border: none;
+    color: #f2f2f2;
+    border-radius: 5px;
+    padding: 10px;
+  }
+
+  #searchdeck{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    height: 24px;
+    padding-left: 10px;
+    width: 200px;
+
+  }
+
+  #searchbutton{
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    height: 30px;
+  }
