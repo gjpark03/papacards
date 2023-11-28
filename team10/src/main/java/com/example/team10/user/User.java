@@ -1,18 +1,15 @@
 package com.example.team10.user;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity
 @Table(name = "User")
 public class User {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int userID;
+    @SequenceGenerator( name  = "user_sequence", sequenceName = "user_sequence", allocationSize = 1
+    )
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_sequence")
+    private Long userID;
 
     @Column(nullable = false, length = 40)
     private String username;
