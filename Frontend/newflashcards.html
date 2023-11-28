@@ -24,68 +24,38 @@
           </nav>
     </div>
 
-    <div class="newdeck">Add a Flashcard Deck</div>
 
-    <div class="container">
-        <div class="row row-cols-1 row-cols-2 row-cols-3">
+    <div class = "term-container">
+      <h2>Add a Flashcard Deck</h2>
 
-            <div class="col">
-                <div class="row justify-content-center">
-                    <form method="POST" action ="">
-                        <div class="row justify-content-start">
-                          
-                        </div>
-                      </form>
-                </div>
-            </div>
+      <div class="form-group">
+      <label for="term">Deck Title</label>
+      <input type="text" id="deck" name="deck" placeholder="Enter the Title of the Deck"/>
+      </div>
 
-            <div class="col">
+      <div class="form-group">
+        <label for="term">Term</label>
+       <input type="text" id="term" name="term" placeholder="Enter the Term"/>
+       <input type="text" id="definition" name="definition" placeholder="Enter the Definition"/>
+      </div>
 
-                <div class="row justify-content-center">
-                    <form method="POST" action ="">
-                        <div class="row-md-12 mx-3 my-3 justify-content-start">
-                          <input type="text" name="name" class="form-control col" placeholder="Title">
-                        </div>
-                      </form>
-                </div>
+      <div class="form-group">
+        <button id="createDeck">Add Term</button>
+      </div>
 
-                <div class="row justify-content-center">
-                    <form method="POST" action ="">
-                      <div class="row justify-content-start">
-                        <button class="sendMssgBtn mx-3 my-3 btn btn-primary col" type="submit">Make Deck</button>
-                      </div>
-                    </form>
-                  </div>
+    </div>
 
-                  <div class="row justify-content-center">
-                    <form method="POST" action ="">
-                        <div class="row-md-12 mx-3 my-3 justify-content-start">
-                          <input type="text" name="name" class="form-control col" placeholder="Term">
-                        </div>
-                      </form>
-                </div>
-
-                <div class="row justify-content-center">
-                    <form method="POST" action ="">
-                        <div class="row-md-12 mx-3 my-3 justify-content-start">
-                          <input type="text" name="name" class="form-control col" placeholder="Definition">
-                        </div>
-                      </form>
-                </div>
-
-                <div class="row justify-content-center">
-                    <form method="POST" action ="">
-                      <div class="row justify-content-start">
-                        <button class="sendMssgBtn mx-3 my-3 btn btn-primary col" type="submit">Add Term</button>
-                      </div>
-                    </form>
-                  </div>
-
-
-            </div>
-
-        </div>
-        </div>
+    <script>
+      document
+      .getElementById("createDeck")
+      .addEventListener("click", function(){
+        var deck = document.getElementById("deck").value;
+        var term = getElementById("term").value;
+        var definition = getElementById("definition").value;
+        //Add creation of term in deck here
+        alert("Term " + term +": " + definition + " added to " + deck); 
+      })
+    </script>
 
 
 </body>
