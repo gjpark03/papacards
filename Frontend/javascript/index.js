@@ -22,3 +22,8 @@ function createSetElement(setData) {
     setElement.onclick = () => window.location.href = `/studydeckloggedin.html?setID=${setData.setID}`;
     return setElement;
 }
+
+
+function search(){
+    //fetch to search servlet harty har har
+}
