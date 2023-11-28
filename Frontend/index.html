@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>papacards - Homepage</title>
+    <title>papacards - Homepage - Logged in</title>
 </head>
 
 <body>
@@ -22,10 +22,9 @@
       </div>
     </nav>
   </div>
-
   <!--Navigation bar-->
 
-<!-- search / create deck -->
+  <!-- search / create deck -->
   <div id="deck-operation">
     <button type="button" id="createdeckbutton"><scan style="font-family: 'FontAwesome';">&#xF044;</scan> Create a Deck</button>
 
@@ -40,8 +39,13 @@
   </div>
   <!-- search / create deck END -->
 
+  <!-- Display Flashcard Sets -->
   <div class="recently-studied">Recently Studied:</div>
-
+  <div id="flashcard-sets-container">
+    <!-- Flashcards will be added here dynamically w/ servlet -->
+  </div>
+    <!-- Display Flashcard Sets END -->
+  <script src="javascript/index.js"></script>
 
 </body>
 </html>
