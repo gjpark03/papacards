@@ -88,3 +88,43 @@ nav a:hover {
   color: rgb(87, 87, 87);
 }
 /* nav bar stuff end */
+
+.create-account {
+  text-align: center;
+  display: block;
+  margin-top: 20px;
+  color: #333;
+}
+
+.form-group button {
+  width: 100%;
+  padding: 10px;
+  background-color: #ff4b4b;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.form-group button:hover {
+  background-color: #ff6565;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  
+}
+
+.form-group label {
+  display: block;
+  color: #666;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
