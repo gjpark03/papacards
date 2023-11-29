@@ -14,6 +14,7 @@ code {
     monospace;
 }
 
+/* top bar */
 h1{
   color: #fff;
   font-size: 30px; /* Set the text size */
@@ -44,19 +45,7 @@ h2 {
   text-align: left;
 }
 
-.login-container {
-  background-color: #fff;
-  padding: 20px;
-  padding-right: 40px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 350px;
-
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
+/* top bar end */
 
 /* nav bar stuff */
 nav {
@@ -88,6 +77,19 @@ nav a:hover {
   color: rgb(87, 87, 87);
 }
 /* nav bar stuff end */
+
+/* login / signup container */
+.login-container {
+  background-color: #fff;
+  padding: 20px;
+  padding-right: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 
 .create-account {
   text-align: center;
@@ -128,3 +130,4 @@ nav a:hover {
   border: 1px solid #ddd;
   border-radius: 5px;
 }
+/* login / signup container end */
