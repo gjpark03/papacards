@@ -1,10 +1,14 @@
-@Service 
-public class SignUpService {
-    @Autowired
-    private UserRepository userRepository;
+package com.example.team10.user;
 
-    public boolean createUser(User user) {
-        userRepository.save(user);
-        return true;
-    }
+import org.springframework.stereotype.Service;
+
+@Service
+public class SignUpService {
+//    @Autowired
+//    private UserRepository userRepository;
+//
+//    public boolean createUser(User user) {
+//        userRepository.save(user);
+//        return true;
+//    }
 }

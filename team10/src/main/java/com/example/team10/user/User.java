@@ -2,7 +2,7 @@ package com.example.team10.user;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "User")
+@Table
 public class User {
 
     @Id
@@ -11,19 +11,19 @@ public class User {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "user_sequence")
     private Long userID;
 
-    @Column(nullable = false, length = 40)
+    //@Column(nullable = false, length = 40)
     private String username;
 
-    @Column(nullable = false, length = 40)
+    //@Column(nullable = false, length = 40)
     private String email;
 
-    @Column(nullable = false, length = 40)
+    //@Column(nullable = false, length = 40)
     private String password;
 
-    @Column(name = "fName", nullable = false, length = 40)
+    //@Column(name = "fName", nullable = false, length = 40)
     private String firstName;
 
-    @Column(name = "lName", nullable = false, length = 40)
+    //@Column(name = "lName", nullable = false, length = 40)
     private String lastName;
 
     // constructors, getters, and setters
@@ -40,11 +40,11 @@ public class User {
     }
 
     // Getters and Setters
-    public int getUserID() {
+    public Long getUserID() {
         return userID;
     }
 
-    public void setUserID(int userID) {
+    public void setUserID(Long userID) {
         this.userID = userID;
     }
 

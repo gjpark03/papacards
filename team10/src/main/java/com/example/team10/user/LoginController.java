@@ -12,22 +12,22 @@ import java.util.List;
 
 @Controller 
 public class LoginController {
-
-    @Autowired
-    private LoginValidation loginService;
-
-    @GetMapping
-    public String login() {
-        return "Login";
-    }
-
-    @PostMapping 
-    public String submitLogin(@RequestParam String username, @RequestParam String password) {
-        if (loginService.validateLogin(username, password)) {
-            return // redirect to the home page
-        }
-        else {
-            return // redirect to the login page, invalid login
-        }
-    }
+//
+//    @Autowired
+//    private LoginValidation loginService;
+//
+//    @GetMapping
+//    public String login() {
+//        return "Login";
+//    }
+//
+//    @PostMapping
+//    public String submitLogin(@RequestParam String username, @RequestParam String password) {
+//        if (loginService.validateLogin(username, password)) {
+//            return // redirect to the home page
+//        }
+//        else {
+//            return // redirect to the login page, invalid login
+//        }
+//    }
 }

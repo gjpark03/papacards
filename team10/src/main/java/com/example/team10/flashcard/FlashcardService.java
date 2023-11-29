@@ -73,4 +73,7 @@ public class FlashcardService {
             flashcard.setFrontText(frontText);
         }
     }
+    public List<Flashcard> searchFlashcards(String text) {
+        return flashcardRepository.findByFrontTextContaining(text);
+    }
 }

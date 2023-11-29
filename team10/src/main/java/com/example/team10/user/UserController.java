@@ -1,5 +1,4 @@
 package com.example.team10.user;
-package com.example.team10.flashcard;
 
 import com.example.team10.flashcard.Flashcard;
 import com.example.team10.flashcard.FlashcardService;
@@ -38,10 +37,10 @@ public class UserController {
     @PostMapping
     public String submitLogin(@RequestParam String username, @RequestParam String password) {
         if (userService.validateLogin(username, password)) {
-            return ""// redirect to the home page
+            return "1";// redirect to the home page
         }
         else {
-            return ""// redirect to the login page, invalid login
+            return "2";// redirect to the login page, invalid login
         }
     }
 

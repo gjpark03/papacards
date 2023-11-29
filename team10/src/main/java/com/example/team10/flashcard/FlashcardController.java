@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping(path = "flashcard")
@@ -37,5 +38,9 @@ public class FlashcardController {
                                 @RequestParam(required = false) String frontText,
                                 @RequestParam(required = false) String backText){
         flashcardService.updateFlashcard(flashcardId, frontText, backText);
+    }
+    @GetMapping("/search")
+    public List<Flashcard> searchFlashcards(@RequestParam String query) {
+        return flashcardService.searchFlashcards(query);
     }
 }
