@@ -73,5 +73,21 @@
     </div>
 </div>
 
+<script>
+  document
+    .getElementById("signupButton")
+    .addEventListener("click", function () {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+      // Add logic to create new user here
+      alert(
+        "Signup attempt with Username: " +
+          username +
+          " and Password: " +
+          password
+      );
+    });
+</script>
+
 </body>
 </html>
